@@ -1,0 +1,35 @@
+.tabs-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
+    background-color: #f0f0f0; /* Color de fondo de las pestañas */
+    border: 1px solid #ccc; /* Borde de las pestañas */
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el mouse */
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
+    background-color: #f0f0f0; /* Color de fondo del encabezado */
+}
+
+ img {
+    width: 10%;
+    height: 10%;/* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.company-name {
+    font-size: 20px; /* Tamaño del texto del nombre de la empresa */
+    font-weight: bold;
+    color: #333; /* Color del texto */
+}
