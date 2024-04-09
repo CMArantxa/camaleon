@@ -62,9 +62,9 @@ public class UserService implements UserDetailsService {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
        User newUser=userRepository.save(user);
         // Guarda la imagen en el servidor
-        String fotoNombre = guardarFotoServidor(foto, newUser.getId() + "-" + newUser.getUsername()+".jpg");
+       // String fotoNombre = guardarFotoServidor(foto, newUser.getId() + "-" + newUser.getUsername()+".jpg");
         // Guarda el nombre de la foto en la base de datos
-        newUser.setFoto(fotoNombre);
+        //newUser.setFoto(fotoNombre);
         userRepository.save(newUser);
        Authority authority=new Authority();
        authority.setAuthority("USER");

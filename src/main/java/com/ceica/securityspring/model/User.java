@@ -18,7 +18,7 @@ public class User {
     private Integer id;
     private String username;
     private String password;
-    private String foto;
+   /* private String foto;*/
     @Column(name = "enabled")
     private Boolean enabled;
 
@@ -84,11 +84,11 @@ public class User {
                 '}';
     }
 
-    public String getFoto() {
+    /*public String getFoto() {
         return foto;
     }
 
     public void setFoto(String foto) {
         this.foto = foto;
-    }
+    }*/
 }
