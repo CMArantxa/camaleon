@@ -4,32 +4,54 @@
 }
 
 .tab {
-    flex: 1;
-    padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
-    background-color: #f0f0f0; /* Color de fondo de las pestañas */
-    border: 1px solid #ccc; /* Borde de las pestañas */
-    text-align: center;
-    cursor: pointer;
+    flex-grow: 0; /* Evitar que las pestañas crezcan para ocupar todo el espacio disponible */
+    width: 70%; /* Establecer el ancho de las pestañas al 80% del espacio disponible */
+    position: relative; /* Para posicionar correctamente el subrayado */
+    text-decoration: none; /* Eliminar el subrayado por defecto */
+    color: green; /* Color del texto */
+    font-size:24px; /* Tamaño de la fuente */
+    padding-bottom: 10px; /* Espacio entre el texto y el subrayado */
+    margin-right: -20px; /* Ajustar el margen entre las palabras */
 }
 
-.tab:hover {
-    background-color: #e0e0e0; /* Color de fondo al pasar el mouse */
+.tab::after {
+    content: ''; /* Contenido generado */
+    position: absolute; /* Posición absoluta respecto al elemento padre */
+    left: 0; /* Comenzar el subrayado desde la izquierda */
+    bottom: 0; /* Colocar el subrayado en la parte inferior */
+    width: 100%; /* Ancho completo */
+    height: 2px; /* Grosor del subrayado */
+    background-color: cadetblue; /* Color del subrayado */
+    transition: width 0.3s ease; /* Efecto de transición para la animación */
 }
+
+.tab:hover::after {
+    width: 100%; /* Ampliar el subrayado al pasar el mouse */
+}
+
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
     background-color: #f0f0f0; /* Color de fondo del encabezado */
+
 }
 
  img {
-    width: 10%;
-    height: 10%;/* Ajusta el tamaño del logo según tus necesidades */
+    width: 15%;
+    height: 15%;/* Ajusta el tamaño del logo según tus necesidades */
 }
 
 .company-name {
-    font-size: 20px; /* Tamaño del texto del nombre de la empresa */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100px; /* Altura del encabezado */
+    font-size: 40px; /* Tamaño del texto del nombre de la empresa */
     font-weight: bold;
-    color: #333; /* Color del texto  2k*/
+    text-align: center; /* Alinear texto al centro */
+    background: linear-gradient(90deg,cornflowerblue,blueviolet,green,yellowgreen); /* Degradado multicolor */
+    -webkit-background-clip: text; /* Clip de texto para aplicar el degradado al texto */
+    -webkit-text-fill-color: transparent; /* Rellenar el texto con el degradado */
 }
