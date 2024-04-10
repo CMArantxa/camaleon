@@ -55,3 +55,66 @@ header {
     -webkit-background-clip: text; /* Clip de texto para aplicar el degradado al texto */
     -webkit-text-fill-color: transparent; /* Rellenar el texto con el degradado */
 }
+
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+#contp1, #contp2 {
+    width: 40%; /* Ocupa el 40% del espacio disponible */
+    height: 0; /* Altura inicial cero */
+    padding-top: 40%; /* Establece la altura igual al 40% del ancho */
+    overflow: auto; /* Habilita el desplazamiento vertical si el contenido excede el tamaño del contenedor */
+}
+
+#contimg {
+    width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
+    flex: 0 0 auto;
+}
+
+#blogo {
+    max-width: 100%;
+    height: auto;
+}
+
+#p1, #p2 {
+    background-color: #f0f0f0; /* Color de fondo opcional para resaltar los párrafos */
+    padding: 10px;
+    border-radius: 5px;
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+.contacto-container {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.contacto {
+    margin-bottom: 10px;
+}
+.boton-enviar {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.boton-enviar:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
