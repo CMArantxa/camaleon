@@ -1,0 +1,56 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal */
+container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilos para cada sección dentro del contenedor */
+container > div {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para los datos de contacto en el pie de página */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto {
+    margin-bottom: 10px;
+}
+
+.boton-enviar {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton-enviar:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+ul{
+    list-style-type: none;
+}

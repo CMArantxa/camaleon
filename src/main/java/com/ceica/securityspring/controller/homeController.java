@@ -14,4 +14,9 @@ public class homeController {
     public String nosotros(){
         return "nosotros";
     }
+    @GetMapping("/a360")
+    public String a360(){
+        return "a360";
+    }
 }
+
