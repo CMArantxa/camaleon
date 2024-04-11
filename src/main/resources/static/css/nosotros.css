@@ -19,11 +19,11 @@ header {
     align-items: center;
     justify-content: center;
     padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
-    background-color: #f0f0f0; /* Color de fondo del encabezado */
-
+    background: linear-gradient(to right, rgba(238,130,238,0.3), rgba(75,0,130,0.3), rgba(0,0,255,0.3), rgba(0,255,0,0.3), rgba(255,255,0,0.3), rgba(255,127,0,0.3), rgba(255,0,0,0.3));
 }
 
  img {
+     margin-left: 20%;
     width: 15%;
     height: 15%;/* Ajusta el tamaño del logo según tus necesidades */
 }
@@ -35,8 +35,9 @@ header {
     height: 100px; /* Altura del encabezado */
     font-size: 40px; /* Tamaño del texto del nombre de la empresa */
     font-weight: bold;
+    margin-right: 20%;
     text-align: center; /* Alinear texto al centro */
-    background: linear-gradient(90deg,cornflowerblue,blueviolet,green,yellowgreen); /* Degradado multicolor */
+    background:linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text; /* Clip de texto para aplicar el degradado al texto */
     -webkit-text-fill-color: transparent; /* Rellenar el texto con el degradado */
 }
@@ -44,7 +45,7 @@ header {
 
 .container {
     display: flex;
-
+    background-color: rgba(154, 205, 50, 0.1);
     .column {
         flex: 1; /* Esto hace que cada columna tome el mismo ancho */
         /* O puedes especificar un ancho fijo para cada columna */
@@ -52,6 +53,7 @@ header {
         /* También puedes agregar margen o relleno si es necesario */
        margin:20px;
         padding: 20px;
+
     }
 
 }
@@ -82,7 +84,7 @@ header {
 
 footer {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    background-color: #f2f2f2;
+    background: linear-gradient(to left, rgba(238,130,238,0.3), rgba(75,0,130,0.3), rgba(0,0,255,0.3), rgba(0,255,0,0.3), rgba(255,255,0,0.3), rgba(255,127,0,0.3), rgba(255,0,0,0.3));
     padding: 20px;
     text-align: center;
 }
@@ -99,14 +101,15 @@ footer {
     margin-bottom: 10px;
 }
 .boton-enviar {
-    background-color: #4CAF50; /* Verde */
+    background:linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
     border: none;
-    color: white;
+    color: black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: bold;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -115,3 +118,4 @@ footer {
 .boton-enviar:hover {
     background-color: #45a049; /* Verde más oscuro */
 }
+
