@@ -13,7 +13,7 @@
     <div class="company-name">
 CAMALEON    </div>
 </header>
-<body>
+
 <div class="tabs-container">
     <div class="tab"><a th:href="nosotros">Nosotros</a></div>
     <div class="tab"><a th:href="a360">360º</a></div>
@@ -22,40 +22,45 @@ CAMALEON    </div>
     <div class="tab"><a th:href="ropa">Ropa</a></div>
     <div class="tab"><a th:href="videos">Videos</a></div>
 </div>
-<div>
 
-        <container id="contp1">
+<div class="container" id="cuerpo2">
+
+<div class="column">
+    <container id="contp1">
             <p id="p1">
         Te ayudamos a reforzar tu marca a través de la publicidad, el marketing digital y merchandising.
         Somos capaces de expresar lo que te hace distinto con la calidad y diferenciación que tu empresa necesita,
         para dar forma y poner en marcha cualquier propuesta que aumente la visibilidad de tu proyecto.
             </p>
         </container>
+</div>
 
+    <div class="column">
     <container id="contimg">
     <img th:src="@{/img/logo.png}" id="blogo" alt="logobody">
     </container>
+    </div>
 
+        <div class="column">
         <container id="contp2">
-            <p id="p2">
-        COMPROMISO
+            <title>COMPROMISO</title>
 
-        Nos comprometemos con tu proyecto.
+            <p>Nos comprometemos con tu proyecto.Cumplimos al 100% nuestros plazos de entrega, sin retrasos ni imprevistos.</p>
 
-        Cumplimos al 100% nuestros plazos de entrega, sin retrasos ni imprevistos.
-        CALIDAD
+            <title>CALIDAD</title>
+            <p>Apostamos por la más alta calidad en nuestros productos y servicios.
 
-        Apostamos por la más alta calidad en nuestros productos y servicios.
+                Revisamos constantemente nuestros estándares y llevamos a cabo ciclos de mejora continua.</p>
 
-        Revisamos constantemente nuestros estándares y llevamos a cabo ciclos de mejora continua.
-        TECNOLOGÍA
+            <title>TECNOLOGÍA</title>
 
-        Utilizamos las máquinas más eficientes y precisas: láser de gran potencia, impresoras de transferencia térmica y tecnologías de marcaje de última generación.
-        … Y un bonus extra: tenemos el mejor servicio post-venta del mercado
-            </p>
+            <p>Utilizamos las máquinas más eficientes y precisas: láser de gran potencia, impresoras de transferencia térmica y tecnologías de marcaje de última generación.</p>
+
+
+        <p>… Y un bonus extra: tenemos el mejor servicio post-venta del mercado. </p>
         </container>
 
-
+        </div>
 </div>
 <footer>
     <div class="contacto">

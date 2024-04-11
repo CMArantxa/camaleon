@@ -14,21 +14,6 @@
     margin-right: -20px; /* Ajustar el margen entre las palabras */
 }
 
-.tab::after {
-    content: ''; /* Contenido generado */
-    position: absolute; /* Posición absoluta respecto al elemento padre */
-    left: 0; /* Comenzar el subrayado desde la izquierda */
-    bottom: 0; /* Colocar el subrayado en la parte inferior */
-    width: 100%; /* Ancho completo */
-    height: 2px; /* Grosor del subrayado */
-    background-color: cadetblue; /* Color del subrayado */
-    transition: width 0.3s ease; /* Efecto de transición para la animación */
-}
-
-.tab:hover::after {
-    width: 100%; /* Ampliar el subrayado al pasar el mouse */
-}
-
 header {
     display: flex;
     align-items: center;
@@ -59,19 +44,35 @@ header {
 
 .container {
     display: flex;
-    gap: 20px;
+
+    .column {
+        flex: 1; /* Esto hace que cada columna tome el mismo ancho */
+        /* O puedes especificar un ancho fijo para cada columna */
+        /* width: 33.33%; */
+        /* También puedes agregar margen o relleno si es necesario */
+       margin:20px;
+        padding: 20px;
+    }
+
 }
 
 #contp1, #contp2 {
+    font-family: Verdana;
+    font-size: 15pt;
     width: 40%; /* Ocupa el 40% del espacio disponible */
     height: 0; /* Altura inicial cero */
     padding-top: 40%; /* Establece la altura igual al 40% del ancho */
     overflow: auto; /* Habilita el desplazamiento vertical si el contenido excede el tamaño del contenedor */
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: palegreen;
+    border-radius: 5px;
 }
 
 #contimg {
-    width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
-    flex: 0 0 auto;
+    width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+    margin-top: 50%;
+    margin-left: 50px;
 }
 
 #blogo {
@@ -79,12 +80,8 @@ header {
     height: auto;
 }
 
-#p1, #p2 {
-    background-color: #f0f0f0; /* Color de fondo opcional para resaltar los párrafos */
-    padding: 10px;
-    border-radius: 5px;
-}
 footer {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
